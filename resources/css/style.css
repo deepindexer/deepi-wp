@@ -1,0 +1,17 @@
+#deepi_container_style_modal{
+	/* display: none; */
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+	background-color: rgba(91, 24, 174, 0.95);
+	width: 100vw;
+	height: 100vh;
+	align-items: center !important;
+	justify-content: center !important;
+	display: flex;
+	flex-wrap: wrap;
+}
+#deepi_container_style_modal .select2-container {
+	z-index: 999999;
+}

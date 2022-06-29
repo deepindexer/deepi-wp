@@ -1,0 +1,408 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: deepi\n"
+"POT-Creation-Date: 2022-05-20 21:47+0430\n"
+"PO-Revision-Date: 2022-05-20 21:48+0430\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: deepi.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: back/main.php:13
+msgid "Description"
+msgstr "توضیحات"
+
+#: back/main.php:14
+msgid "Let Deepi do your site's search."
+msgstr "جستجوی سایتتان را به دیپی بسپارید."
+
+#: back/main.php:15
+msgid "Upgrade your site's `lexical search` to Deepi's `Conceptual Search`"
+msgstr ""
+"\"جستجوی لغوی\" سایتتان را با \"سرویس جستجوی مفهومی دانش‌بنیان دیپی\" ارتقاء "
+"دهید"
+
+#: back/main.php:16
+msgid ""
+"Take advantage of the latest &quot;artificial intelligence&quot; technologies"
+msgstr "و از مزایای \"آخرین فناوری های هوش مصنوعی\" در سایتتان استفاده کنید"
+
+#: back/main.php:17
+msgid "Features"
+msgstr "ویژگی‌ها"
+
+#: back/main.php:19
+msgid "Conceptual search service"
+msgstr "سرویس جستجوی مفهومی"
+
+#: back/main.php:20
+msgid "Conceptual search of sentences"
+msgstr "جستجوی مفهومی جملات"
+
+#: back/main.php:21
+msgid "Conceptual search in seventy different languages"
+msgstr "جستجوی مفهومی به هفتاد زبان مختلف"
+
+#: back/main.php:22
+msgid "Conceptual recommendation service"
+msgstr "سرویس پیشنهاد‌دهنده مفهومی"
+
+#: back/main.php:23
+msgid "Intelligent NER (Named Entity Recognition)"
+msgstr "تشخیص هوشمند موجودیت‌های متن"
+
+#: back/main.php:24
+msgid "Precise &amp; quick"
+msgstr "دقت و سرعت"
+
+#: back/main.php:26
+msgid ""
+"This plugin requires API keys from <a href=\"http://www.deepi."
+"ir:8000\">Deepi</a>."
+msgstr ""
+"این پلاگین نیازمند اخذ کلید‌ رابط برنامه‌نویسی از سایت <a href=\"https://www."
+"deepi.ir\">دیپی</a>است."
+
+#: back/main.php:27
+msgid "Getting Started"
+msgstr "آغاز به کار"
+
+#: back/main.php:28
+msgid "A guide to setting up the WP Search with the Deepi plugin."
+msgstr " راهنمای تنظیم جستجوی وردپرس با افزونه دیپی."
+
+#: back/main.php:29
+msgid "Deepi Credentials"
+msgstr "تنظیم کلید‌های دیپی"
+
+#: back/main.php:30
+msgid ""
+"When logged into the WordPress Dashboard, find the &quot;Deepi&quot; entry in "
+"the left-hand admin menu and\n"
+"click on it. You will be presented with the Settings page where you configure "
+"your Deepi credentials."
+msgstr ""
+"پس از ورود به داشبورد وردپرس، عنوان \"دیپی\" را در منوی مدیریت سمت چپ پیدا و "
+"روی آن کلیک فرمایید. در ادامه صفحه تنظیمات باز خواهد شد که شما می‌توانید "
+"کلید‌های دیپی خود را در این بخش ثبت فرمایید."
+
+#: back/main.php:32
+msgid ""
+"If you do not have a Deepi account yet, you can create one for free at <a "
+"href=\"http://www.deepi.ir:8000\">Deepi</a>.\n"
+"Once you have created your account, and you have signed in,"
+msgstr ""
+"اگر هنوز حساب کاربری خود را در دیپی ایجاد ننموده‌اید، می‌توانید هم‌اکنون یک حساب "
+"کاربری در <a href=\"http://www.deepi.ir:8000\">دیپی</a> ایجاد فرمایید. پس از "
+"ایجاد حساب کاربری و ورود به سیستم،"
+
+#: back/main.php:35
+msgid ""
+"Go to the <a href=\"http://www.deepi.ir:8000/dashboard/setting/\">setting "
+"page</a>."
+msgstr ""
+"به صفحه <a href=\"http://www.deepi.ir:8000/dashboard/setting/\">تنظیمات</a>. "
+"بروید."
+
+#: back/main.php:36
+msgid "Create a new project for your first website (Figure 1)."
+msgstr "برای نخستین وبسایت خود یک پروژه جدید ایجاد نمایید."
+
+#: back/main.php:40
+msgid ""
+"you will need to copy/paste the following keys to your WordPress setting form "
+"(Figure 2):"
+msgstr ""
+"کلید‌های زیر را از صفحه تنظیمات سایت رونوشت گرفته و در فرم تنظیمات وردپرس‌تان "
+"وارد فرمایید:"
+
+#: back/main.php:44
+msgid "Project Slug"
+msgstr "شناسه پروژه"
+
+#: back/main.php:45
+msgid "API Key"
+msgstr "کلید رابط برنامه‌نویسی"
+
+#: back/main.php:46
+msgid ""
+"<strong>Note</strong>: Copy/pasting these keys manually; is very error-prone. "
+"The copy button on the right side of each key will\n"
+"make copy/pasting easier."
+msgstr ""
+"<strong>توجه</strong>: رونوشت گرفتن از این کلید‌ها به صورت دستی بسیار مستعد "
+"خطا است. دکمه رونوشت‌گیری تعبیه شده در سمت راست هر یک از این کلید‌ها، این امر "
+"را برای شما آسان خواهد نمود."
+
+#: back/main.php:48
+msgid ""
+"Once you have filled in the required keys on the WordPress settings form, "
+"click on the Save Changes button at the bottom of the\n"
+"form."
+msgstr ""
+"پس از پر کردن کلید‌های مورد نیاز در فرم تنظیمات وردپرس‌تان، روی دکمه ذخیره "
+"تغییرات در پایین فرم کلیک فرمایید."
+
+#: back/main.php:50
+msgid ""
+"If you have correctly provided WordPress with your Deepi keys, you will see a "
+"success message."
+msgstr ""
+"اگر کلید‌های دیپی خود را به درستی در وردپرس وارد نمایید، پیام ذخیره موفقیت "
+"آمیز تغییراتتان را مشاهده خواهید نمود."
+
+#: back/main.php:52
+msgid ""
+"If your Deepi account credit is positive, the WordPress setting page status "
+"switches to &quot;active&quot;."
+msgstr ""
+"اگر اعتبار حساب دیپی شما مثبت باشد، وضعیت صفحه تنظیمات وردپرس‌تان به \"فعال\" "
+"تغییر پیدا می‌کند."
+
+#: back/main.php:54
+msgid ""
+"Click on the &quot;Index&quot; button to send your content to Deepi servers. "
+"After that, everything will be kept in sync\n"
+"automatically."
+msgstr ""
+"برای ارسال محتوای مطالب خود به سرورهای دیپی، بر روی دکمه ایندکس کلیک فرمایید. "
+"پس از آن، همه چیز به طور خودکار همگام نگه داشته می‌شود."
+
+#: back/main.php:58
+msgid "[ ] Do not use Deepi"
+msgstr "[ ] از دیپی استفاده نکنید"
+
+#: back/main.php:59
+msgid ""
+"With this option, Deepi will not replace the native WordPress search "
+"experience. Deepi will\n"
+"index the content, but it will not affect the native WordPress search page "
+"experience."
+msgstr ""
+"با انتخاب این گزینه، دیپی جایگزین جستجوی بومی وردپرس نخواهد شد. دیپی همچنان "
+"محتوای سایتتان را ایندکس خواهد کرد، ولی این امر تاثیری بر جستجوی بومی وردپرس "
+"نخواهد داشت."
+
+#: back/main.php:61
+msgid ""
+"This option is useful when you only need Deepi Plugin to index your WordPress "
+"content. For example, if you\n"
+"intend to"
+msgstr ""
+"این گزینه وقتی به کار می‌آید که شما می‌خواهید افزونه دیپی فقط محتوای سایت "
+"وردپرس‌تان را ایندکس نماید. به عنوان مثال، اگر قصد دارید"
+
+#: back/main.php:64
+msgid "Make your content searchable from another site that implements Deepi"
+msgstr ""
+"محتوای سایت خود را در سایت دیگری که دیپی را پیاده‌سازی می‌کند قابل جستجو کنید"
+
+#: back/main.php:65
+msgid "Build a custom search UI with your Deepi search bar implementation"
+msgstr "با پیاده‌سازی نوار جستجوی دیپی خود، یک رابط کاربری جستجوی سفارشی بسازید"
+
+#: back/main.php:67
+msgid "[ ] Remove Deepi powered by logo link"
+msgstr "[ ] حذف پیوند طراحی شده توسط دیپی"
+
+#: back/main.php:68
+msgid ""
+"This will remove the Deepi logo &quot;link&quot; and only displays a pure "
+"logo image."
+msgstr ""
+"با انتخاب این گزینه \"پیوند\" لوگو دیپی در نوار جستجو حذف خواهد شد و تنها "
+"تصویر لوگو نمایش داده می‌شود."
+
+#: back/main.php:69
+msgid "[ ] Remove &quot;Deepi version&quot; link"
+msgstr "[ ] حذف پیوند \"نسخه دیپی\""
+
+#: back/main.php:70
+msgid ""
+"This will remove the &quot;Deepi version&quot; link at the end of each post. "
+"In this version, the named entities of\n"
+"your text have been recognized quite intelligently and have become a "
+"searchable link."
+msgstr ""
+"با انتخاب این گزینه پیوند \"نسخه دیپی\" از انتهای صفحات مطالبتان (پست‌هایتان) "
+"حذف خواهد شد. گفتنی است که در این نسخه، موجودیت‌های نامدار متن‌تان به صورت "
+"هوشمند تشخیص داده شده و به صورت پیوند‌های قابل جستجو در سایتتان درآمده‌اند."
+
+#: back/menu.php:28 back/menu.php:29
+msgid "Deepi"
+msgstr "دیپی"
+
+#: back/menu.php:38 back/menu.php:39
+msgid "Settings"
+msgstr "تنظیمات"
+
+#: back/settings.php:34
+msgid "Enter your secret key here."
+msgstr "توکن (کلید مخفی) خود را اینجا وارد کنید."
+
+#: back/settings.php:42
+msgid "Enter your project slug here."
+msgstr "شناسه پروژه (اسلاگ) را اینجا وارد کنید."
+
+#: back/settings.php:50
+msgid "choose style of the search form."
+msgstr "استایل فرم جستجو را انتخاب کنید."
+
+#: back/settings.php:53
+msgid "Default"
+msgstr "پیشفرض"
+
+#: back/settings.php:54
+msgid "Classic"
+msgstr "قدیمی"
+
+#: back/settings.php:61
+msgid "Remove \"Deepi version\" link"
+msgstr "حذف پیوند \"نسخه دیپی\""
+
+#: back/settings.php:66
+msgid "Don't display Deepi search form."
+msgstr "فرم جستجوی دیپی را نمایش نده."
+
+#: back/settings.php:70
+msgid "Remove Deepi powered by logo link."
+msgstr "حذف پیوند طراحی شده توسط دیپی"
+
+#: back/settings.php:73
+msgid "save"
+msgstr "ذخیره"
+
+#: back/settings.php:77
+msgid "Post status"
+msgstr "وضعیت پست"
+
+#: back/settings.php:79
+msgid "unsubmitted posts: "
+msgstr "پست‌های ارسال نشده:"
+
+#: back/settings.php:79
+msgid "submitted posts: "
+msgstr "پست‌های ارسال شده: "
+
+#: back/settings.php:85
+#, php-format
+msgid "Concept remaining size: %s"
+msgstr "حجم باقیمانده مفهومی: %s"
+
+#: back/settings.php:99
+#, php-format
+msgid "You have %s unsubmitted posts. click on index button to submit them."
+msgstr "شما %s پست ارسال نشده دارید. روی ارسال کلیک کنید."
+
+#: back/settings.php:102
+msgid "All of your posts are submitted."
+msgstr "تمامی پست‌های شما ارسال شده‌اند."
+
+#: back/settings.php:108
+msgid "index"
+msgstr "ارسال"
+
+#: back/settings.php:112
+msgid "Reset Posts status"
+msgstr "ریست کردن وضعیت پست‌ها"
+
+#: back/settings.php:113
+msgid ""
+"Click reset button to change status of all your posts to `unsubmitted` so you "
+"may submit them again. "
+msgstr ""
+"برای تغییر وضعیت همه پست‌ها به \"ارسال نشده\"، روی دکمه ریست کلیک کنید. این "
+"شما را قادر می‌سازد تا مجددا آنها را ارسال کنید."
+
+#: back/settings.php:115
+msgid "reset"
+msgstr "ریست"
+
+#: functions.php:68
+msgid "Value is saved successfully."
+msgstr "مقادیر با موفقیت ذخیره شدند."
+
+#: functions.php:72
+msgid "Failed saving the value."
+msgstr "ذخیره مقادیر ناموفق بود."
+
+#: functions.php:85
+msgid "Invalid inputs."
+msgstr "ورودی‌های نامعتبر."
+
+#: functions.php:105
+msgid "Values are saved successfully."
+msgstr "مقادیر با موفقیت ذخیره شدند."
+
+#: functions.php:161
+msgid "Your account in Deepi is active."
+msgstr "حساب شما در دیپی فعال است."
+
+#: functions.php:165
+msgid "There is no active account with such slug in Deepi"
+msgstr "هیچ حساب فعالی با اسلاگ وارد شده وجود ندارد."
+
+#: functions.php:169
+msgid "You secret key (token) is invalid."
+msgstr "توکن شما نامعتبر است."
+
+#: functions.php:352
+msgid "Deepi version"
+msgstr "نسخه دیپی"
+
+#: functions.php:396
+msgid "You have no unsubmitted posts."
+msgstr "شما هیچ پست ارسال نشده‌ای ندارید."
+
+#: searchbox-old.php:32 searchbox-old.php:34
+msgid "Conceptual"
+msgstr "مفهومی"
+
+#: searchbox-old.php:43 searchbox-old.php:45
+msgid "lexical"
+msgstr "واژه‌ای"
+
+#: searchbox-old.php:80
+msgid ""
+"Type the phrase you want in the language of your choice and select one of the "
+"suggestions"
+msgstr ""
+"عبارتی که می‌خواهید را به زبان دلخواه وارد کرده و یکی از پشنهادات را انتخاب "
+"کنید."
+
+#: searchbox.php:49
+msgid "Search in 70 languages..."
+msgstr "به 70 زبان جستجو کنید..."
+
+#. Plugin Name of the plugin/theme
+msgid "deepi"
+msgstr "دیپی"
+
+#. Plugin URI of the plugin/theme
+msgid "plugin url"
+msgstr "آدرس پلاگین"
+
+#. Description of the plugin/theme
+msgid ""
+"Upgrade your site's \"lexical search\" to Deepi's \"Conceptual Search\", Take "
+"advantage of the latest \"artificial intelligence\" technologies."
+msgstr ""
+"\"جستجوی لغوی\" سایتتان را با \"سرویس جستجوی مفهومی دانش‌بنیان دیپی\" ارتقاء "
+"دهید و و از مزایای \"آخرین فناوری های هوش مصنوعی\" در سایتتان استفاده کنید."
+
+#. Author of the plugin/theme
+msgid "Mohsen Nasr"
+msgstr "محسن نصر"

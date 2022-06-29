@@ -1,0 +1,366 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: deepi\n"
+"POT-Creation-Date: 2022-05-20 21:51+0430\n"
+"PO-Revision-Date: 2022-05-20 21:14+0430\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: deepi.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: back/main.php:13
+msgid "Description"
+msgstr ""
+
+#: back/main.php:14
+msgid "Let Deepi do your site's search."
+msgstr ""
+
+#: back/main.php:15
+msgid "Upgrade your site's `lexical search` to Deepi's `Conceptual Search`"
+msgstr ""
+
+#: back/main.php:16
+msgid ""
+"Take advantage of the latest &quot;artificial intelligence&quot; technologies"
+msgstr ""
+
+#: back/main.php:17
+msgid "Features"
+msgstr ""
+
+#: back/main.php:19
+msgid "Conceptual search service"
+msgstr ""
+
+#: back/main.php:20
+msgid "Conceptual search of sentences"
+msgstr ""
+
+#: back/main.php:21
+msgid "Conceptual search in seventy different languages"
+msgstr ""
+
+#: back/main.php:22
+msgid "Conceptual recommendation service"
+msgstr ""
+
+#: back/main.php:23
+msgid "Intelligent NER (Named Entity Recognition)"
+msgstr ""
+
+#: back/main.php:24
+msgid "Precise &amp; quick"
+msgstr ""
+
+#: back/main.php:26
+msgid ""
+"This plugin requires API keys from <a href=\"http://www.deepi."
+"ir:8000\">Deepi</a>."
+msgstr ""
+
+#: back/main.php:27
+msgid "Getting Started"
+msgstr ""
+
+#: back/main.php:28
+msgid "A guide to setting up the WP Search with the Deepi plugin."
+msgstr ""
+
+#: back/main.php:29
+msgid "Deepi Credentials"
+msgstr ""
+
+#: back/main.php:30
+msgid ""
+"When logged into the WordPress Dashboard, find the &quot;Deepi&quot; entry "
+"in the left-hand admin menu and\n"
+"click on it. You will be presented with the Settings page where you "
+"configure your Deepi credentials."
+msgstr ""
+
+#: back/main.php:32
+msgid ""
+"If you do not have a Deepi account yet, you can create one for free at <a "
+"href=\"http://www.deepi.ir:8000\">Deepi</a>.\n"
+"Once you have created your account, and you have signed in,"
+msgstr ""
+
+#: back/main.php:35
+msgid ""
+"Go to the <a href=\"http://www.deepi.ir:8000/dashboard/setting/\">setting "
+"page</a>."
+msgstr ""
+
+#: back/main.php:36
+msgid "Create a new project for your first website (Figure 1)."
+msgstr ""
+
+#: back/main.php:40
+msgid ""
+"you will need to copy/paste the following keys to your WordPress setting "
+"form (Figure 2):"
+msgstr ""
+
+#: back/main.php:44
+msgid "Project Slug"
+msgstr ""
+
+#: back/main.php:45
+msgid "API Key"
+msgstr ""
+
+#: back/main.php:46
+msgid ""
+"<strong>Note</strong>: Copy/pasting these keys manually; is very error-"
+"prone. The copy button on the right side of each key will\n"
+"make copy/pasting easier."
+msgstr ""
+
+#: back/main.php:48
+msgid ""
+"Once you have filled in the required keys on the WordPress settings form, "
+"click on the Save Changes button at the bottom of the\n"
+"form."
+msgstr ""
+
+#: back/main.php:50
+msgid ""
+"If you have correctly provided WordPress with your Deepi keys, you will see "
+"a success message."
+msgstr ""
+
+#: back/main.php:52
+msgid ""
+"If your Deepi account credit is positive, the WordPress setting page status "
+"switches to &quot;active&quot;."
+msgstr ""
+
+#: back/main.php:54
+msgid ""
+"Click on the &quot;Index&quot; button to send your content to Deepi servers. "
+"After that, everything will be kept in sync\n"
+"automatically."
+msgstr ""
+
+#: back/main.php:58
+msgid "[ ] Do not use Deepi"
+msgstr ""
+
+#: back/main.php:59
+msgid ""
+"With this option, Deepi will not replace the native WordPress search "
+"experience. Deepi will\n"
+"index the content, but it will not affect the native WordPress search page "
+"experience."
+msgstr ""
+
+#: back/main.php:61
+msgid ""
+"This option is useful when you only need Deepi Plugin to index your "
+"WordPress content. For example, if you\n"
+"intend to"
+msgstr ""
+
+#: back/main.php:64
+msgid "Make your content searchable from another site that implements Deepi"
+msgstr ""
+
+#: back/main.php:65
+msgid "Build a custom search UI with your Deepi search bar implementation"
+msgstr ""
+
+#: back/main.php:67
+msgid "[ ] Remove Deepi powered by logo link"
+msgstr ""
+
+#: back/main.php:68
+msgid ""
+"This will remove the Deepi logo &quot;link&quot; and only displays a pure "
+"logo image."
+msgstr ""
+
+#: back/main.php:69
+msgid "[ ] Remove &quot;Deepi version&quot; link"
+msgstr ""
+
+#: back/main.php:70
+msgid ""
+"This will remove the &quot;Deepi version&quot; link at the end of each post. "
+"In this version, the named entities of\n"
+"your text have been recognized quite intelligently and have become a "
+"searchable link."
+msgstr ""
+
+#: back/menu.php:28 back/menu.php:29
+msgid "Deepi"
+msgstr ""
+
+#: back/menu.php:38 back/menu.php:39
+msgid "Settings"
+msgstr ""
+
+#: back/settings.php:34
+msgid "Enter your secret key here."
+msgstr ""
+
+#: back/settings.php:42
+msgid "Enter your project slug here."
+msgstr ""
+
+#: back/settings.php:50
+msgid "choose style of the search form."
+msgstr ""
+
+#: back/settings.php:53
+msgid "Default"
+msgstr ""
+
+#: back/settings.php:54
+msgid "Classic"
+msgstr ""
+
+#: back/settings.php:61
+msgid "Remove \"Deepi version\" link"
+msgstr ""
+
+#: back/settings.php:66
+msgid "Don't display Deepi search form."
+msgstr ""
+
+#: back/settings.php:70
+msgid "Remove Deepi powered by logo link."
+msgstr ""
+
+#: back/settings.php:73
+msgid "save"
+msgstr ""
+
+#: back/settings.php:77
+msgid "Post status"
+msgstr ""
+
+#: back/settings.php:81
+msgid "unsubmitted posts: "
+msgstr ""
+
+#: back/settings.php:83
+msgid "submitted posts: "
+msgstr ""
+
+#: back/settings.php:90
+#, php-format
+msgid "Concept remaining size: %s"
+msgstr ""
+
+#: back/settings.php:104
+#, php-format
+msgid "You have %s unsubmitted posts. click on index button to submit them."
+msgstr ""
+
+#: back/settings.php:107
+msgid "All of your posts are submitted."
+msgstr ""
+
+#: back/settings.php:113
+msgid "index"
+msgstr ""
+
+#: back/settings.php:117
+msgid "Reset Posts status"
+msgstr ""
+
+#: back/settings.php:118
+msgid ""
+"Click reset button to change status of all your posts to `unsubmitted` so "
+"you may submit them again. "
+msgstr ""
+
+#: back/settings.php:120
+msgid "reset"
+msgstr ""
+
+#: functions.php:68
+msgid "Value is saved successfully."
+msgstr ""
+
+#: functions.php:72
+msgid "Failed saving the value."
+msgstr ""
+
+#: functions.php:85
+msgid "Invalid inputs."
+msgstr ""
+
+#: functions.php:105
+msgid "Values are saved successfully."
+msgstr ""
+
+#: functions.php:161
+msgid "Your account in Deepi is active."
+msgstr ""
+
+#: functions.php:165
+msgid "There is no active account with such slug in Deepi"
+msgstr ""
+
+#: functions.php:169
+msgid "You secret key (token) is invalid."
+msgstr ""
+
+#: functions.php:352
+msgid "Deepi version"
+msgstr ""
+
+#: functions.php:396
+msgid "You have no unsubmitted posts."
+msgstr ""
+
+#: searchbox-old.php:32 searchbox-old.php:34
+msgid "Conceptual"
+msgstr ""
+
+#: searchbox-old.php:43 searchbox-old.php:45
+msgid "lexical"
+msgstr ""
+
+#: searchbox-old.php:80
+msgid ""
+"Type the phrase you want in the language of your choice and select one of "
+"the suggestions"
+msgstr ""
+
+#: searchbox.php:49
+msgid "Search in 70 languages..."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "deepi"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "plugin url"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Upgrade your site's \"lexical search\" to Deepi's \"Conceptual Search\", "
+"Take advantage of the latest \"artificial intelligence\" technologies."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Mohsen Nasr"
+msgstr ""
