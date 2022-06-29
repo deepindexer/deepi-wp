@@ -1,25 +1,26 @@
-#deepi_container_style_modal{
-	display: none;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 99999;
-	background-color: rgba(0, 0, 0, 0.90);
-	width: 100vw;
-	height: 100vh;
-	align-items: center !important;
-	justify-content: center !important;
-	/* display: flex; */
-	flex-wrap: wrap;
+html {
+    margin-top: 0 !important;
 }
-#deepi_container_style_modal .select2-container {
-	z-index: 999999;
+
+/*
+html[lang="en-US"] #deepi_post_link *,
+html[dir="ltr"] #deepi_post_link *{
+	text-align: left;
 }
+html[lang="fa-IR"] #deepi_post_link *,
+html[dir="rtl"] #deepi_post_link *{
+	text-align: right;
+}
+*/
 
 #deepi_post_link{
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+#deepi_post_link * {
+	display: inline-block;
+}
+
 #deepi_post_link a{
 	color: #000;
 	text-decoration: underline;
@@ -28,55 +29,27 @@
 	width: 20px;
 	height: auto;
 	margin: 0 10px;
-}
-.select2-container--open {
-    z-index: 9999999
-}
-.select2-container{
-    z-index:100000;
-	background-color: #fff;
-	border-radius: 2px;
-	padding: 2px;
-	width: 520px;
-}
-#deepi_modal_close {
-	position: absolute;
-	top: 50px;
-	left: 25px;
-	z-index: 99;
-	color: #fff;
-	cursor: pointer;
-}
-#deepi_modal_close .dashicons{
-	font-size: 28px;
-}
-#deepi_logo_btn {
-	width: 25px;
-	height: auto;
-	margin: 10px auto;
-	cursor: pointer;
+    display: inline-block;
 }
 
-@media only screen and (max-width: 600px) {
-	.select2-container {
-	  max-width: 100%;
-	  width: 360px;
-	}
-  }
-
-#deepi_container_style_normal #deepi_modal_close, 
-#deepi_toogle_btn_style_normal{
-	display: none;
+/* select2 placeholder & ... font */
+.select2-dropdown, .select2-selection__placeholder, .select2-results__options, .select2-results__option.select2-results__message, .select2-search__field, .container, .tooltip {
+	color: #6c757d;
+	font-size: 14px;
 }
-#deepi_container_style_normal {
-	max-width: 100%;
-}
-#deepi_form_logo_link{
-	background: #fff;
-padding: 8px;
-margin: 0 5px;
-border-radius: 50%;
-text-decoration: none;
-outline: 0;
 
+/* select2 placeholder img */
+html[lang="fa-IR"] .select2-selection__placeholder img,
+html[dir="rtl"] .select2-selection__placeholder img{
+    height:20px;
+    opacity:50%;
+    padding-left: 5px;
+    margin-bottom:-5px;
+}
+
+html[lang="en-US"] .select2-selection__placeholder img,
+html[dir="ltr"] .select2-selection__placeholder img{
+    height:20px;
+    opacity:50%;
+    padding-right: 5px;
 }

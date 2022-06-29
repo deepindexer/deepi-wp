@@ -21,15 +21,34 @@ function deepi_install(){
       
       $table_name = $wpdb->prefix . "deepi";
       global $wpdb;
-      $keys = ['secret_key', 'slug', 'style', 'form_visibility', 'deepi_link_visibility', 'deepi_post_link']; 
-      foreach($keys as $key){
-          if(deepi_fetch_key($key) == ""){
-              $wpdb->insert($table_name, array(
-                  'key' => $key,
-                  'value' => 1,
-                  ) );
-          }
-      }  
+
+    $wpdb->insert($table_name, array(
+      'key' => 'secret_key',
+    ) );
+
+    $wpdb->insert($table_name, array(
+        'key' => 'slug',
+    ) );
+    
+    $wpdb->insert($table_name, array(
+        'key' => 'style',
+        'value' => "default",
+    ) );
+
+    $wpdb->insert($table_name, array(
+        'key' => 'form_visibility',
+        'value' => 1,
+    ) );
+
+    $wpdb->insert($table_name, array(
+        'key' => 'deepi_link_visibility',
+        'value' => 1,
+    ) );
+    
+    $wpdb->insert($table_name, array(
+        'key' => 'deepi_post_link',
+        'value' => 1,
+    ) );
       
     
     //// Post Status

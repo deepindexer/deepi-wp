@@ -28,6 +28,13 @@ function deepi_dumper($any){
 	echo "</pre><br />";
 }
 
+function deepi_log($path){
+	$deepi_log = fopen("deep_log.txt", "w") or die("Unable to open file!");
+	$txt = $request_data."\n";
+	fwrite($deepi_log, $txt);
+	fclose($deepi_log);
+}
+
 function deepi_is_key($input){
 	$pattern = "/^[a-zA-Z0-9]+$/";
 	if(preg_match($pattern , $input ) !==false){
@@ -109,6 +116,7 @@ function deepi_save_settings($data){
 function deepi_is_active(){
 	$slug = deepi_fetch_key('slug');
 	$api  = "https://www.deepi.ir/dashboard/api/v1/active/$slug/";
+// 	$api  = "http://www.deepi.lab/dashboard/api/v1/active/$slug/";
 	$json = @file_get_contents($api);
 	$array = json_decode($json, true);
 	if($json == false or $array['active']==false){
@@ -123,6 +131,7 @@ function deepi_is_active_2(){
 	$slug = deepi_fetch_key('slug');
 	//$slug = "sa";
 	$api  = "https://www.deepi.ir/dashboard/api/v1/info/$slug/";
+// 	$api  = "http://www.deepi.lab/dashboard/api/v1/info/$slug/";
 
 	$request_data = 			
 				array(
@@ -138,6 +147,14 @@ function deepi_is_active_2(){
 	//return $response['response']['code'];
 	return $response;
 }
+
+function deepi_get_cached_delay(){
+	$response = deepi_is_active_2();
+	$json = $response['body'];
+	$array = json_decode($json, true);
+	return $array['cached_delay'];
+}
+
 
 function deepi_check(){
 	$status = deepi_is_active_2();
@@ -162,11 +179,11 @@ function deepi_is_active_msg(){
 		$color = 'success';
 	}
 	elseif($status['response']['code'] == 404){
-		$msg = __('There is no active account with such slug in Deepi','deepi');
+		$msg = __('The project slug is incorrect.','deepi');
 		$color = 'error';
 	}
 	elseif($status['response']['code'] == 403) {
-		$msg = __('You secret key (token) is invalid.','deepi');
+		$msg = __('Your API key is invalid.','deepi');
 		$color = 'error';
 	}	
 	deepi_admin_notice($msg, $color);
@@ -176,7 +193,7 @@ function deepi_is_active_msg(){
 function deepi_select_unsubmited(){
 	global $wpdb;
 	$table_name = $wpdb->prefix . "posts";
-	$sql = "select `ID` from `$table_name` where `deepi_status` = 'unsubmitted' AND  `post_status` = 'publish'  ;";
+	$sql = "select `ID` from `$table_name` where `deepi_status` = 'unsubmitted' AND  `post_status` = 'publish' and `ping_status` = 'open' ;";
 	$result = $wpdb->get_results($sql, 'ARRAY_A');
 	return $result;
 }
@@ -184,7 +201,7 @@ function deepi_select_unsubmited(){
 function deepi_select_posts_by_status($status='submitted'){
 	global $wpdb;
 	$table_name = $wpdb->prefix . "posts";
-	$sql = "select `ID` from `$table_name` where `deepi_status` = '$status' AND  `post_status` = 'publish'  ;";
+	$sql = "select `ID` from `$table_name` where `deepi_status` = '$status' AND  `post_status` = 'publish' and `ping_status` = 'open' ;";
 	$result = $wpdb->get_results($sql, 'ARRAY_A');
 	return $result;
 }
@@ -211,7 +228,7 @@ function deepi_submit_request($post){
 				array(
 					'project' => deepi_fetch_key('slug'), 
 					'title' => $post->post_title, 
-					'content_type' => 0, 
+					'content_type' => 1,
 					'content' => $post->post_content, 
 					'mtime' => strtotime($post->post_modified),  
 					'path' => $post->guid, 
@@ -221,9 +238,14 @@ function deepi_submit_request($post){
 		);
 		//deepi_dumper($post);
 		//deepi_dumper($request_data);
+		
+		
+
+		//////////////////////////////////////////
 
 		$url = 'https://www.deepi.ir/dashboard/api/v1/files/';
-		
+// 		$url = 'http://www.deepi.lab/dashboard/api/v1/files/';
+
 		 
 		$options = [
 			'body'        => $request_data,
@@ -266,7 +288,8 @@ function deepi_submit_request_delete($post){
 		//deepi_dumper($request_data);
 
 		$url = 'https://www.deepi.ir/dashboard/api/v1/files/'.deepi_fetch_key('slug').'/?path='.$post->guid;
-		
+// 		$url = 'http://www.deepi.lab/dashboard/api/v1/files/'.deepi_fetch_key('slug').'/?path='.$post->guid;
+
 		 
 		$options = [
 			'method' 	=> 'DELETE', 
@@ -308,49 +331,69 @@ function deepi_reset(){
 }
 
 // this is the safest method I could find atm to separate 'update' and 'publish'
-add_action( 'transition_post_status', 'deepi_post_submit', 10, 3 );
-function deepi_post_submit( $new_status, $old_status, $post ) { 
-    //if ( $new_status == 'publish' && $old_status != 'publish' ) {
-    if ( $new_status == 'publish' ) {
-		$submit = deepi_submit_request($post);
-		if($submit){
-			deepi_save_status($post);
-		}
+add_action( 'wp_after_insert_post', 'deepi_post_submit', 10, 4 );
 
-		$not_submited_ones = deepi_select_unsubmited();	
-		if($not_submited_ones){
-			foreach($not_submited_ones as $nso){
-				$post = get_post($nso['ID']);
-				$submit = deepi_submit_request($post);
-				if($submit){
-					deepi_save_status($post);
+//add_action( 'transition_post_status', 'deepi_post_submit', 10, 3 );
+//function deepi_post_submit( $new_status, $old_status, $post ) { 
+
+function deepi_post_submit( $post_id, $post, $update, $post_before ) { 
+    //if ( $new_status == 'publish' && $old_status != 'publish' ) {
+	if(deepi_check()!=true){
+		deepi_save_status($post, 'unsubmitted');
+	}
+	else{
+    	if ( 'publish' == $post->post_status ) {
+			$submit = deepi_submit_request($post);
+			if($submit){
+				deepi_save_status($post);
+			}
+
+			$not_submited_ones = deepi_select_unsubmited();	
+			if($not_submited_ones){
+				foreach($not_submited_ones as $nso){
+					$post = get_post($nso['ID']);
+					$submit = deepi_submit_request($post);
+					if($submit){
+						deepi_save_status($post);
+					}
 				}
 			}
+
 		}
-		
-	exit;
-	}
-	elseif ( $new_status == 'trash' ) {
-		$submit = deepi_submit_request_delete($post);
-		if($submit){
-			deepi_save_status($post, 'unsubmitted');
+		elseif ( $post->post_status == 'trash' ) {
+			$submit = deepi_submit_request_delete($post);
+			if($submit){
+				deepi_save_status($post, 'unsubmitted');
+			}
 		}
-		exit;
 	}
 }
+
 
 add_filter( 'the_content', 'deepi_post_link', 1 );
 function deepi_post_link($content){
 	global $post;
+
+	
+
 	$deepi_post_link = deepi_fetch_key('deepi_post_link');
+
 	if($deepi_post_link == 0 or deepi_is_active()!=true or deepi_post_status($post->ID)!="submitted"){
 		return $content;
 	}
-	
+
+	$delay = deepi_get_cached_delay();
+	$post_timestamp = strtotime($post->post_modified);
+	$current_timestamp = current_time('timestamp') ;
+
+	if($current_timestamp-$post_timestamp<$delay){
+		return $content;
+	}
 	$logo_url = deepi__PLUGIN_URL."/resources/img/logo.png";
 	$link = "https://www.deepi.ir/". substr(get_bloginfo( 'language' ), 0, 2) ."/".deepi_fetch_key('slug')."/cached/?path=".$post->guid;
 	$text = __('Deepi version','deepi');
-	$html = "<div id='deepi_post_link'><a href='$link' target='_blank'><img src='$logo_url'>$text</a></div>";
+// 	$html = "<div id='deepi_post_link'><a href='$link' target='_blank'><img src='$logo_url'>$text</a></div>";
+	$html = "<div id='deepi_post_link'><a href='$link' target='_blank'><div><img src='$logo_url'></div><div>$text</div></a></div>";
 	return $content.$html;
 }
 
@@ -375,25 +418,31 @@ function deepi_all_status(){
 
 function deepi_all_to_index(){
     $all = deepi_all_status();
-    $to_index = $all['unsubmitted']+ $all['crawled']+ $all['error'];
+    $to_index = array_merge($all['unsubmitted'], $all['crawled'], $all['error']);
     return $to_index;
 }
 
 function deepi_index_submit(){
-	$all_to_index = deepi_all_to_index();
-	if($all_to_index){
-		foreach($all_to_index as $nso){
-			$post = get_post($nso['ID']);
-			$submit = deepi_submit_request($post);
-			if($submit){
-				deepi_save_status($post);
-			}
-		}
-		header('location: /wp-admin/admin.php?page=deepi_settings');
-		exit;
+	if(deepi_check()!==true){
+		return;
 	}
-	else {
-		$msg = __('You have no unsubmitted posts.');
-		deepi_admin_notice($msg, 'info');
+	else{
+		$all_to_index = deepi_all_to_index();
+		if($all_to_index){
+			foreach($all_to_index as $nso){
+				$post = get_post($nso['ID']);
+				$submit = deepi_submit_request($post);
+				if($submit){
+					deepi_save_status($post);
+				}
+			}
+			header('location: /wp-admin/admin.php?page=deepi_settings');
+			exit;
+		}
+		else {
+			$msg = __('You have no unsubmitted posts.');
+			deepi_admin_notice($msg, 'info');
+		}
 	}
 }
+

@@ -69,7 +69,7 @@ msgstr ""
 #: back/main.php:26
 msgid ""
 "This plugin requires API keys from <a href=\"http://www.deepi."
-"ir:8000\">Deepi</a>."
+"ir\">Deepi</a>."
 msgstr ""
 
 #: back/main.php:27
@@ -95,13 +95,13 @@ msgstr ""
 #: back/main.php:32
 msgid ""
 "If you do not have a Deepi account yet, you can create one for free at <a "
-"href=\"http://www.deepi.ir:8000\">Deepi</a>.\n"
+"href=\"http://www.deepi.ir\">Deepi</a>.\n"
 "Once you have created your account, and you have signed in,"
 msgstr ""
 
 #: back/main.php:35
 msgid ""
-"Go to the <a href=\"http://www.deepi.ir:8000/dashboard/setting/\">setting "
+"Go to the <a href=\"http://www.deepi.ir/dashboard/setting/\">setting "
 "page</a>."
 msgstr ""
 
@@ -126,15 +126,13 @@ msgstr ""
 #: back/main.php:46
 msgid ""
 "<strong>Note</strong>: Copy/pasting these keys manually; is very error-"
-"prone. The copy button on the right side of each key will\n"
-"make copy/pasting easier."
+"prone. The copy button on the right side of each key will make copy/pasting easier."
 msgstr ""
 
 #: back/main.php:48
 msgid ""
 "Once you have filled in the required keys on the WordPress settings form, "
-"click on the Save Changes button at the bottom of the\n"
-"form."
+"click on the Save Changes button at the bottom of the form."
 msgstr ""
 
 #: back/main.php:50
@@ -214,7 +212,7 @@ msgid "Settings"
 msgstr ""
 
 #: back/settings.php:34
-msgid "Enter your secret key here."
+msgid "Enter your API key here."
 msgstr ""
 
 #: back/settings.php:42
@@ -263,7 +261,7 @@ msgstr ""
 
 #: back/settings.php:90
 #, php-format
-msgid "Concept remaining size: %s"
+msgid "Number of pages required to start Deepi searchbar: %s"
 msgstr ""
 
 #: back/settings.php:104
@@ -285,8 +283,7 @@ msgstr ""
 
 #: back/settings.php:118
 msgid ""
-"Click reset button to change status of all your posts to `unsubmitted` so "
-"you may submit them again. "
+"Click the reset button to resubmit all your posts."
 msgstr ""
 
 #: back/settings.php:120
@@ -318,7 +315,7 @@ msgid "There is no active account with such slug in Deepi"
 msgstr ""
 
 #: functions.php:169
-msgid "You secret key (token) is invalid."
+msgid "You API key is invalid."
 msgstr ""
 
 #: functions.php:352

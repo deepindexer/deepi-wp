@@ -31,7 +31,7 @@ function deepi_settings_html() {
     ?>
     <br />
     <form method='post'>
-        <label for='secret_key' ><?php _e('Enter your secret key here.','deepi'); ?></label>
+        <label for='secret_key' ><?php _e('Enter your API key here.','deepi'); ?></label>
         <br />
         <input name='secret_key' type='text' class='' autocomplete='off' value='<?php echo deepi_fetch_key('secret_key'); ?>'  >
     
@@ -86,8 +86,9 @@ function deepi_settings_html() {
           if($status['response']['code']==200){
             $remaining = json_decode($status['body'], true)['concept_remaining_size'];
           //echo $remaining;
-          if($remaining > 0 ){          
-            printf(__('Concept remaining size: %s','deepi'), $remaining);
+          if($remaining > 0 ){
+            printf("<br />");
+            printf(__('Number of pages required to start Deepi searchbar: %s','deepi'), $remaining);
           }
           }  
           
@@ -110,12 +111,12 @@ function deepi_settings_html() {
     <br />
     <br />
     <form method='post'>
-        <input <?php echo ($to_submit_count==0)?"disabled":""; ?> type="submit" name="deepi_index_submit" id="submit" class="button button-primary" value="<?php _e('index', 'deepi'); ?>">
+        <input <?php echo (deepi_check()!==true or $to_submit_count==0)?"disabled":""; ?> type="submit" name="deepi_index_submit" id="submit" class="button button-primary" value="<?php _e('index', 'deepi'); ?>">
     </form>
     <br />
     <br />
     <h2><?php _e('Reset Posts status','deepi'); ?></h2>
-    <?php _e('Click reset button to change status of all your posts to `unsubmitted` so you may submit them again. ','deepi'); ?>
+    <?php _e('Click the reset button to resubmit all your posts.','deepi'); ?>
     <br /><br />
     <form method='post'>
         <input style="background: red; border-color: red;" type="submit" name="deepi_reset_submit" id="submit" class="button button-primary" value="<?php _e('reset', 'deepi'); ?>">

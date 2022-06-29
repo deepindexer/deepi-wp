@@ -1,7 +1,4 @@
 <?php
-
-
-
 function deepi_index_html() {
     // check user capabilities
     if (!current_user_can('manage_options')) {
