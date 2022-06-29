@@ -34,7 +34,7 @@
 * 🐛💡 [script.php] Auto focus on jquery 3.6.0 bug fixed.
 * 🐛💡 [script.php] Placeholder as a title removed (default title in some cases). (partially resolved!)
 
-# 0.1.4-beta (2022-05-30)(01.03.09)
+# 1.3.9-beta (0.1.4-beta)(2022-05-30)
 
 ## Migration
 
