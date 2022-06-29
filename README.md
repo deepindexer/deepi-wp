@@ -8,7 +8,7 @@ Upgrade your site's "lexical search" to "Deepi's Conceptual Search"
 
 Take advantage of the latest "artificial intelligence" technologies
 
-**Note**: The **beta version** can only be used through **Iranian payment gateways**.
+**Note**: The "beta version" can only be used through "Iranian payment gateways".
 
 # Features
 

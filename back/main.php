@@ -14,6 +14,7 @@ function deepi_main_html() {
 <p><?php _e("Let Deepi do your site's search.",'deepi'); ?></p>
 <p><?php _e("Upgrade your site's \"lexical search\" to Deepi's \"Conceptual Search\"","deepi"); ?></p>
 <p><?php _e("Take advantage of the latest \"artificial intelligence\" technologies",'deepi'); ?></p>
+<p><?php _e("<strong>Note</strong>: The \"beta version\" can only be used through \"Iranian payment gateways\".",'deepi'); ?></p>
 <h1 id="features"><?php _e("Features",'deepi'); ?></h1>
 <ul>
 <li>* <?php _e("Conceptual search service",'deepi'); ?></li>

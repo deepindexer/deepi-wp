@@ -40,6 +40,12 @@ msgid ""
 "Take advantage of the latest \"artificial intelligence\" technologies"
 msgstr "و از مزایای \"آخرین فناوری های هوش مصنوعی\" در سایتتان استفاده کنید"
 
+#: back/main.php:16
+msgid ""
+"<strong>Note</strong>: The \"beta version\" can only be used through \"Iranian payment gateways\"."
+msgstr ""
+"<strong>توجه</strong>: نسخه بتا تنها از طریق درگاه‌های پرداخت ایران قابل استفاده است."
+
 #: back/main.php:17
 msgid "Features"
 msgstr "ویژگی‌ها"
