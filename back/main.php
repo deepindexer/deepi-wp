@@ -9,9 +9,8 @@ function deepi_main_html() {
     global $wpdb;
 ?>
 <div class="wrap">
-    <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
-    <h1 id="description"><?php _e("Description",'deepi'); ?></h1>
-<p><?php _e("Let Deepi do your site's search.",'deepi'); ?></p>
+    <h1 id="description"><?php _e("Deepi WordPress Plugin",'deepi'); ?></h1>
+<p><?php _e("Let Deepi do your site's search",'deepi'); ?></p>
 <p><?php _e("Upgrade your site's \"lexical search\" to Deepi's \"Conceptual Search\"","deepi"); ?></p>
 <p><?php _e("Take advantage of the latest \"artificial intelligence\" technologies",'deepi'); ?></p>
 <p><?php _e("<strong>Note</strong>: The \"beta version\" can only be used through \"Iranian payment gateways\".",'deepi'); ?></p>

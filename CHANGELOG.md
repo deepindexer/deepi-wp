@@ -1,3 +1,13 @@
+# 1.4.8-beta (2022-06-29)
+
+## Added
+
+* 🎈 **Links** section added to `README.md`
+
+## Changed
+
+* 🔷 LICENSE changed from `MIT` to `gpl-3.0`
+
 # 1.4.7-beta (2022-06-28)
 
 ## Added

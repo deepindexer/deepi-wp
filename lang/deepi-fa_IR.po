@@ -22,12 +22,12 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: back/main.php:13
-msgid "Description"
-msgstr "توضیحات"
+msgid "Deepi WordPress Plugin"
+msgstr "افزونه وردپرس دیپی"
 
 #: back/main.php:14
-msgid "Let Deepi do your site's search."
-msgstr "جستجوی سایتتان را به دیپی بسپارید."
+msgid "Let Deepi do your site's search"
+msgstr "جستجوی سایتتان را به دیپی بسپارید"
 
 #: back/main.php:15
 msgid "Upgrade your site's \"lexical search\" to Deepi's \"Conceptual Search\""
