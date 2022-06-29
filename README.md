@@ -1,6 +1,6 @@
 
 
-# Description
+# Deepi WordPress Plugin
 
 Let [Deepi](https://www.deepi.ir) do your site's search.
 
