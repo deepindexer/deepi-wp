@@ -37,28 +37,36 @@ created your account, and you have signed in,
 
 1. Go to the [setting page](https://www.deepi.ir/dashboard/setting/).
 2. Create a new project for your first website (Figure 1).
-
-![Deepi Setting Page > Create New Project](resources/img/project.png)
+   ![Deepi Setting Page > Create New Project](resources/img/project.png)
 
 3. you will need to copy/paste the following keys to your WordPress setting form (Figure 2):
+    * Project Slug
+    * API Key
 
-![Deepi Setting Page > Project Slug & API Key](resources/img/keys.png)
+   **Note**: Copy/pasting these keys manually; is very error-prone. The copy button on the right side of each key will
+   make copy/pasting easier.
 
-* Project Slug
-* API Key
+   Once you have filled in the required keys on the WordPress settings form, click on the Save Changes button at the
+   bottom of the form.
 
-  **Note**: Copy/pasting these keys manually; is very error-prone. The copy button on the right side of each key will
-  make copy/pasting easier.
-
-  Once you have filled in the required keys on the WordPress settings form, click on the Save Changes button at the
-  bottom of the form.
-
-  If you have correctly provided WordPress with your Deepi keys, you will see a success message.
-
+   If you have correctly provided WordPress with your Deepi keys, you will see a success message.
+   ![Deepi Setting Page > Project Slug & API Key](resources/img/keys.png)
 4. If your Deepi account credit is positive, the WordPress setting page status switches to "active".
 
 5. Click on the "Index" button to send your content to Deepi servers. After that, everything will be kept in sync
    automatically.
+6. Add Deepi search bar to your site pages using just one of the following codes (per page):
+    * Using the `[deepi_form]` shortcode, of course, if your site theme supports shortcodes
+    * Or using this php code, in a suitable div (with desired width) in your html codes:
+      ```php
+      <?php 
+      if(function_exists('deepi_selectbox')){
+          deepi_selectbox();
+      }
+      ?>
+      ```
+      **Note**: Please do not use these codes simultaneously on one page. Also, do not repeat one of them twice on the
+      same page.
 
 ## [ ] Do not use Deepi
 

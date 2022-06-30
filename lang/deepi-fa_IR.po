@@ -183,6 +183,25 @@ msgstr ""
 "برای ارسال محتوای مطالب خود به سرورهای دیپی، بر روی دکمه ایندکس کلیک فرمایید. "
 "پس از آن، همه چیز به طور خودکار همگام نگه داشته می‌شود."
 
+#: back/main.php
+msgid "Add Deepi search bar to your site pages using just one of the following codes (per page):"
+msgstr ""
+"نوار جستجوی دیپی را با استفاده از تنها یکی از کد‌های زیر (در هر صفحه) به صفحات سایتتان اضافه نمایید:"
+
+#: back/main.php
+msgid "Using the <code>[deepi_form]</code> shortcode, of course, if your site theme supports shortcodes"
+msgstr ""
+"با استفاده از کد کوتاه <code>[deepi_form]</code>، البته در صورتی که قالب سایت شما از کد کوتاه پشتیبانی می‌نماید"
+
+#: back/main.php
+msgid "Or using this php code, in a suitable div (with desired width) in your html codes:"
+msgstr ""
+"و یا با استفاده از این قطعه کد php، در یک div مناسب (با عرض دلخواه) در کدهای html تان:"
+
+#: back/main.php
+msgid "<strong>Note</strong>: Please do not use these codes simultaneously on one page. Also, do not repeat one of them twice on the same page."
+msgstr "<strong>توجه</strong>: لطفا این کدها را به صورت همزمان در یک صفحه استفاده ننمایید. علاوه بر این، یکی از آن‌ها را نیز دو بار در یک صفحه تکرار نکنید."
+
 #: back/main.php:58
 msgid "[ ] Do not use Deepi"
 msgstr "[ ] از دیپی استفاده نکنید"

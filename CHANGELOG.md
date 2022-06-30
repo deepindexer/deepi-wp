@@ -1,3 +1,10 @@
+# 1.4.9-beta (2022-06-30)
+
+## Added
+
+* 🎈 [main.php] deepi searchbar codes added.
+* 🎈 [README.md] deepi searchbar codes added.
+
 # 1.4.8-beta (2022-06-29)
 
 ## Added

@@ -55,9 +55,22 @@ Once you have created your account, and you have signed in,','deepi'); ?></p>
     <p><?php _e("Click on the &quot;Index&quot; button to send your content to Deepi servers. After that, everything will be kept in sync
 automatically.",'deepi'); ?></p>
 </li>
+
+<li><?php _e("Add Deepi search bar to your site pages using just one of the following codes (per page):",'deepi'); ?>
+    <ul>
+        <li>* <?php _e("Using the <code>[deepi_form]</code> shortcode, of course, if your site theme supports shortcodes",'deepi'); ?></li>
+        <li>* <?php _e("Or using this php code, in a suitable div (with desired width) in your html codes:",'deepi'); ?></li>
+    </ul>
+    <code>&lt;?php
+if(function_exists('deepi_selectbox')){
+    deepi_selectbox();
+}
+?&gt;</code>
+    <p><?php _e("<strong>Note</strong>: Please do not use these codes simultaneously on one page. Also, do not repeat one of them twice on the same page.",'deepi'); ?></p>
+</li>
 </ol>
 
-<br /><br />
+<br />
 <h2 id="-do-not-use-deepi"><?php _e("[ ] Do not use Deepi",'deepi'); ?></h2>
 <p><?php _e("With this option, Deepi will not replace the native WordPress search experience. Deepi will
 index the content, but it will not affect the native WordPress search page experience.",'deepi'); ?></p>
@@ -67,10 +80,12 @@ intend to",'deepi'); ?></p>
 <li>* <?php _e("Make your content searchable from another site that implements Deepi",'deepi'); ?></li>
 <li>* <?php _e("Build a custom search UI with your Deepi search bar implementation",'deepi'); ?></li>
 </ul>
-<br /><br />
+
+<br />
 <h2 id="-remove-deepi-powered-by-logo-link"><?php _e("[ ] Remove Deepi powered by logo link",'deepi'); ?></h2>
 <p><?php _e("This will remove the Deepi logo &quot;link&quot; and only displays a pure logo image.",'deepi'); ?></p>
-<br /><br />
+
+<br />
 <h2 id="-remove-deepi-version-link"><?php _e("[ ] Remove &quot;Deepi version&quot; link",'deepi'); ?></h2>
 <p><?php _e("This will remove the &quot;Deepi version&quot; link at the end of each post. In this version, the named entities of
 your text have been recognized quite intelligently and have become a searchable link.",'deepi'); ?></p>
