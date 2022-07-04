@@ -320,8 +320,8 @@ msgstr "پست‌های ارسال شده: "
 
 #: back/settings.php:90
 #, php-format
-msgid "Number of pages required to start Deepi searchbar: %s"
-msgstr "تعداد صفحات مورد نیاز تا آغاز به کار نوار جستجوی دیپی: %s"
+msgid "Number of sentences required to start Deepi searchbar: %s"
+msgstr "تعداد جملات مورد نیاز تا آغاز به کار نوار جستجوی دیپی: %s"
 
 #: back/settings.php:104
 #, php-format

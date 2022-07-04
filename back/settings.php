@@ -88,7 +88,7 @@ function deepi_settings_html() {
           //echo $remaining;
           if($remaining > 0 ){
             printf("<br />");
-            printf(__('Number of pages required to start Deepi searchbar: %s','deepi'), $remaining);
+            printf(__('Number of sentences required to start Deepi searchbar: %s','deepi'), $remaining);
           }
           }  
           

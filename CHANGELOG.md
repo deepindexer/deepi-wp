@@ -1,3 +1,8 @@
+# 1.5.1-beta (unreleased)(2022-07-23)
+## Changed
+
+* 🔷 [settings.php] `concept_remaining_size` changed from the number of **pages** to the number of **sentences**.
+
 # 1.4.9-beta (2022-06-30)
 
 ## Added
