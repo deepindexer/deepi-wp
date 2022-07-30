@@ -1,4 +1,10 @@
-# 1.5.1-beta (unreleased)(2022-07-23)
+# 1.6.1-beta (unreleased)(2022-08-x)
+
+# 1.5.8 (2022-07-30)
+
+## Changed
+
+* 🔷 [deepi.php] `Version` beta word removed.
 
 # 1.4.13-beta (2022-07-04)
 
