@@ -2,6 +2,10 @@
 
 # 1.5.8 (2022-07-30)
 
+## Added
+
+* 🎈 [readme.txt] added. [read more](https://developer.wordpress.org/plugins/wordpress-org/how-your-readme-txt-works/)
+
 ## Changed
 
 * 🔷 [deepi.php] `Version` beta word removed.
