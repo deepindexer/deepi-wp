@@ -2,18 +2,7 @@
 
 $to_submit_count = count(deepi_all_to_index());
 $submitted_count = count(deepi_all_status()['submitted']);
-
-if(isset($_POST['deepi_settings_submit'])){    
-    deepi_save_settings($_POST);  
-}
-
-if(isset($_POST['deepi_index_submit'])){
-    deepi_index_submit();
-}
-
-if(isset($_POST['deepi_reset_submit'])){
-    deepi_reset();
-}
+require_once(ABSPATH . 'wp-admin/includes/screen.php');
 
 function deepi_settings_html() {
     global $to_submit_count, $submitted_count;
@@ -22,6 +11,72 @@ function deepi_settings_html() {
         return;
     }
     global $wpdb;
+
+    if(!function_exists('wp_get_current_user')) { include(ABSPATH . "wp-includes/pluggable.php"); }
+
+if(isset($_POST['deepi_settings_submit'])){    
+    if(!current_user_can('manage_options')){
+        $msg = __("you don't have enough privileges to perform this operation.",'deepi');
+        deepi_admin_notice($msg,'error');
+    }
+    // check if necessary data is sent:
+    elseif(
+        !isset($_POST['secret_key']) or 
+        !isset($_POST['slug']) or 
+        !isset($_POST['style']) 
+    ){
+        $msg = __('Invalid inputs.','deepi');
+        deepi_admin_notice($msg,'error');
+    }
+    // validating data :
+    elseif(
+        deepi_is_key($_POST['secret_key']) != true or 
+		deepi_is_key($_POST['slug']) != true or 
+		!in_array($_POST['style'], ['default', 'classic'])  
+    ){
+        $msg = __('Invalid inputs.','deepi');
+        deepi_admin_notice($msg,'error');
+    }
+    else {
+        // These data can only 0 or 1;
+        $form_visibility = (isset($_POST['form_visibility']) and $_POST['form_visibility']==1)?'0':'1';
+        $deepi_link_visibility = (isset($_POST['deepi_link_visibility']) and $_POST['deepi_link_visibility']==1)?'0':'1';
+	    $deepi_post_link = (isset($_POST['deepi_post_link']) and $_POST['deepi_post_link']==1)?'0':'1';
+
+        $data = [
+            'secret_key' => sanitize_text_field($_POST['secret_key']),
+            'slug' => sanitize_text_field($_POST['slug']),
+            'style' => sanitize_text_field($_POST['style']),
+            'form_visibility' => $form_visibility, 
+            'deepi_link_visibility' => $deepi_link_visibility,
+            'deepi_post_link' => $deepi_post_link,
+        ];
+        deepi_save_settings($data);
+    }
+      
+}
+
+if(isset($_POST['deepi_index_submit'])){
+    if(!current_user_can('manage_options')){
+        $msg = __("you don't have enough privileges to perform this operation.",'deepi');
+        deepi_admin_notice($msg,'error');
+    }
+    else {
+        deepi_index_submit();
+    }
+    
+}
+
+if(isset($_POST['deepi_reset_submit'])){
+    if(!current_user_can('manage_options')){
+        $msg = __("you don't have enough privileges to perform this operation.",'deepi');
+        deepi_admin_notice($msg,'error');
+    }
+    else {
+        deepi_reset();
+    }
+    
+}
 ?>
 <div class="wrap">
     <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
@@ -33,7 +88,7 @@ function deepi_settings_html() {
     <form method='post'>
         <label for='secret_key' ><?php _e('Enter your API key here.','deepi'); ?></label>
         <br />
-        <input name='secret_key' type='text' class='' autocomplete='off' value='<?php echo deepi_fetch_key('secret_key'); ?>'  >
+        <input name='secret_key' type='text' class='' autocomplete='off' value='<?php echo esc_html(deepi_fetch_key('secret_key')); ?>'  >
     
 
     <br />
@@ -41,7 +96,7 @@ function deepi_settings_html() {
     
         <label for='slug' ><?php _e('Enter your project slug here.','deepi'); ?></label>
         <br />
-        <input name='slug' type='text' class='' autocomplete='off' value='<?php echo deepi_fetch_key('slug'); ?>'  >
+        <input name='slug' type='text' class='' autocomplete='off' value='<?php echo esc_html(deepi_fetch_key('slug')); ?>'  >
    
 
     <br />
@@ -79,13 +134,13 @@ function deepi_settings_html() {
         <p>
             <?php 
             _e('unsubmitted posts: ','deepi'); 
-            echo $to_submit_count."<br />";
+            echo esc_html($to_submit_count)."<br />";
             _e('submitted posts: ','deepi');
-            echo $submitted_count; 
+            echo esc_html($submitted_count); 
             $status = deepi_is_active_2();
           if($status['response']['code']==200){
             $remaining = json_decode($status['body'], true)['concept_remaining_size'];
-          //echo $remaining;
+          //echo esc_html($remaining);
           if($remaining > 0 ){
             printf("<br />");
             printf(__('Number of sentences required to start Deepi searchbar: %s','deepi'), $remaining);

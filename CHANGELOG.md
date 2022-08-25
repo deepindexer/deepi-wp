@@ -1,5 +1,15 @@
 # 1.6.1-beta (unreleased)(2022-08-x)
 
+# 1.5.24 (2022-08-15)
+
+## Changed
+
+* 🔷 [settings.php] important issues resolved.
+* 🔷 [deepi.php] important issues resolved.
+* 🔷 [functions.php] important issues resolved.
+* 🔷 [script.php] important issues resolved.
+* 🔷 [searchbox.php] important issues resolved.
+
 # 1.5.8 (2022-07-30)
 
 ## Added

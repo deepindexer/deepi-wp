@@ -39,7 +39,7 @@ function deepi_selectbox(){
             novalidate 
             action="https://www.deepi.ir/fa/dashboard/search/"
             method="get" target="_blank">
-                <input type="hidden" id="project" name="project" value="<?php echo $slug; ?>">
+                <input type="hidden" id="project" name="project" value="<?php echo esc_html($slug); ?>">
 
                 <select style="width:100%;" id="js-data-ajax" class="left deepi_data_ajax" name="query" required></select> 
         </form>

@@ -42,7 +42,6 @@ function deepi_enqueues( $hook ) {
 	
 	wp_register_script('jQueryNumber',deepi__PLUGIN_URL.'resources/js/jquery.number.min.js');
 	wp_register_script('JSCookie',deepi__PLUGIN_URL.'resources/js/js.cookie.min.js');
-// 	wp_register_script('bootstrapBundleDeepi',deepi__PLUGIN_URL.'resources/js/bootstrap.bundle.min.js');
 
 	wp_register_script('select2',deepi__PLUGIN_URL.'resources/js/select2.min.js');
 	wp_register_script('select2_fa',deepi__PLUGIN_URL.'resources/js/select2_fa.js');
@@ -54,7 +53,6 @@ function deepi_enqueues( $hook ) {
 
     wp_enqueue_script('jquery');
     wp_enqueue_script('jQueryNumber');
-    //wp_enqueue_script('bootstrapBundleDeepi');
     wp_enqueue_script('JSCookie');
 	wp_enqueue_script('select2');
 	wp_enqueue_script('select2_fa');

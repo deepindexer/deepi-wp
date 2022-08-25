@@ -7,7 +7,7 @@ jQuery(document).ready(function ( $ ) {
         $(this).select2();
     })
     jQuery("#js-data-ajax").select2({
-              theme: '<?php echo $style; ?>',
+              theme: '<?php echo esc_html($style); ?>',
               //language: 'fa',
               language: '<?php echo substr(get_locale(), 0, 2) ?>',
               dir: 'rtl',

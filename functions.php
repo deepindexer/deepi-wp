@@ -17,8 +17,8 @@ function deepi_admin_notice($message,$status = 'info') {
 	}
 	
 	
-	$res = "<div class='$class is-dismissible'><p>$message</p></div>";
-	echo $res;
+	echo "<div class='".esc_html($class)."' is-dismissible'><p>".esc_html($message)."</p></div>";
+	
    
 }
 
@@ -36,12 +36,12 @@ function deepi_log($path){
 }
 
 function deepi_is_key($input){
-	$pattern = "/^[a-zA-Z0-9]+$/";
-	if(preg_match($pattern , $input ) !==false){
-		return true;
+	//$pattern = "~^[a-zA-Z0-9]+$~";
+	if(preg_match("/^[a-zA-Z0-9-\s]+$/" , $input ) == 0){
+		return false;
 	}
 	else {
-        return false;
+        return true;
 	}
 }
 
@@ -85,14 +85,6 @@ function deepi_save_settings($data){
 	global $wpdb;
 	$table_name = $wpdb->prefix . "deepi";
 
-	if(	deepi_is_key($data['secret_key']) != true and 
-		deepi_is_key($data['slug']) != true and 
-		!in_array($data['style'], ['default', 'classic'])
-	){
-		$msg = __('Invalid inputs.','deepi');
-        deepi_admin_notice($msg,'error');
-	}
-
 	$form_visibility = (isset($data['form_visibility']) and $data['form_visibility']==1)?'0':'1';
 	$deepi_link_visibility = (isset($data['deepi_link_visibility']) and $data['deepi_link_visibility']==1)?'0':'1';
 	$deepi_post_link = (isset($data['deepi_post_link']) and $data['deepi_post_link']==1)?'0':'1';
@@ -100,9 +92,9 @@ function deepi_save_settings($data){
 	$sqls = ['secret_key' => "update `$table_name` set `value` = '". $data['secret_key'] ."' where `key`='secret_key';", 
 			'slug' => "update `$table_name` set `value` = '". $data['slug'] ."' where `key`='slug';" , 
 			'style' => "update `$table_name` set `value` = '". $data['style'] ."' where `key`='style';",
-			'form_visibility' => "update `$table_name` set `value` = '". $form_visibility ."' where `key`='form_visibility';",
-			'deepi_link_visibility' => "update `$table_name` set `value` = '". $deepi_link_visibility ."' where `key`='deepi_link_visibility';",
-			'deepi_post_link' => "update `$table_name` set `value` = '". $deepi_post_link ."' where `key`='deepi_post_link';",
+			'form_visibility' => "update `$table_name` set `value` = '". $data['form_visibility'] ."' where `key`='form_visibility';",
+			'deepi_link_visibility' => "update `$table_name` set `value` = '". $data['deepi_link_visibility'] ."' where `key`='deepi_link_visibility';",
+			'deepi_post_link' => "update `$table_name` set `value` = '". $data['deepi_post_link'] ."' where `key`='deepi_post_link';",
 ];
 
 	foreach($sqls as $key => $sql){
