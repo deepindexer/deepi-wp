@@ -55,11 +55,11 @@ msgid "Conceptual search in seventy different languages"
 msgstr ""
 
 #: back/main.php:22
-msgid "Conceptual recommendation service"
+msgid "Conceptual recommender service"
 msgstr ""
 
 #: back/main.php:23
-msgid "Intelligent NER (Named Entity Recognition)"
+msgid "Intelligent Recognition of Text Entities"
 msgstr ""
 
 #: back/main.php:24
@@ -187,7 +187,7 @@ msgstr ""
 
 #: back/main.php:68
 msgid ""
-"This will remove the Deepi logo &quot;link&quot; and only displays a pure "
+"This will remove the Deepi logo &quot;link&quot; in the search bar and only displays a pure "
 "logo image."
 msgstr ""
 

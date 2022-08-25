@@ -19,8 +19,8 @@ function deepi_main_html() {
 <li>* <?php _e("Conceptual search service",'deepi'); ?></li>
 <li>* <?php _e("Conceptual search of sentences",'deepi'); ?></li>
 <li>* <?php _e("Conceptual search in seventy different languages",'deepi'); ?></li>
-<li>* <?php _e("Conceptual recommendation service",'deepi'); ?></li>
-<li>* <?php _e("Intelligent NER (Named Entity Recognition)",'deepi'); ?></li>
+<li>* <?php _e("Conceptual recommender service",'deepi'); ?></li>
+<li>* <?php _e("Intelligent Recognition of Text Entities",'deepi'); ?></li>
 <li>* <?php _e("Precise &amp; quick",'deepi'); ?></li>
 </ul>
 <p><?php _e('This plugin requires API keys from <a href="http://www.deepi.ir">Deepi</a>.','deepi'); ?></p>
@@ -83,7 +83,7 @@ intend to",'deepi'); ?></p>
 
 <br />
 <h2 id="-remove-deepi-powered-by-logo-link"><?php _e("[ ] Remove Deepi powered by logo link",'deepi'); ?></h2>
-<p><?php _e("This will remove the Deepi logo &quot;link&quot; and only displays a pure logo image.",'deepi'); ?></p>
+<p><?php _e("This will remove the Deepi logo &quot;link&quot; in the search bar and only displays a pure logo image.",'deepi'); ?></p>
 
 <br />
 <h2 id="-remove-deepi-version-link"><?php _e("[ ] Remove &quot;Deepi version&quot; link",'deepi'); ?></h2>

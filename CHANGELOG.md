@@ -1,4 +1,8 @@
-# 1.6.1-beta (unreleased)(2022-08-x)
+# 1.7.1 (unreleased)(2022-08-x)
+
+# 1.6.3 (2022-08-25)
+
+* 🎈 some guide & translations updated.
 
 # 1.5.24 (2022-08-15)
 

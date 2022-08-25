@@ -63,11 +63,11 @@ msgid "Conceptual search in seventy different languages"
 msgstr "جستجوی مفهومی به هفتاد زبان مختلف"
 
 #: back/main.php:22
-msgid "Conceptual recommendation service"
+msgid "Conceptual recommender service"
 msgstr "سرویس پیشنهاد‌دهنده مفهومی"
 
 #: back/main.php:23
-msgid "Intelligent NER (Named Entity Recognition)"
+msgid "Intelligent Recognition of Text Entities"
 msgstr "تشخیص هوشمند موجودیت‌های متن"
 
 #: back/main.php:24
@@ -241,7 +241,7 @@ msgstr "[ ] حذف پیوند طراحی شده توسط دیپی"
 
 #: back/main.php:68
 msgid ""
-"This will remove the Deepi logo &quot;link&quot; and only displays a pure "
+"This will remove the Deepi logo &quot;link&quot; in the search bar and only displays a pure "
 "logo image."
 msgstr ""
 "با انتخاب این گزینه \"پیوند\" لوگو دیپی در نوار جستجو حذف خواهد شد و تنها "

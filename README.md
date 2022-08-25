@@ -13,8 +13,8 @@ Take advantage of the latest "artificial intelligence" technologies
 - Conceptual search service
 - Conceptual search of sentences
 - Conceptual search in seventy different languages
-- Conceptual recommendation service
-- Intelligent NER (Named Entity Recognition)
+- Conceptual recommender service
+- Intelligent Recognition of Text Entities
 - Precise & quick
 
 This plugin requires API keys from [Deepi](https://www.deepi.ir).
@@ -73,14 +73,14 @@ created your account, and you have signed in,
 With this option, Deepi will not replace the native WordPress search experience. Deepi will index the content, but it
 will not affect the native WordPress search page experience.
 
-This option is useful when you only need Deepi Plugin to index your WordPress content. For example, if you intend to
+This option is useful when you only need Deepi Plugin to index your WordPress content. For example, if you intend to:
 
 * Make your content searchable from another site that implements Deepi
 * Build a custom search UI with your Deepi search bar implementation
 
 ## [ ] Remove Deepi powered by logo link
 
-This will remove the Deepi logo "link" and only displays a pure logo image.
+This will remove the Deepi logo "link" in the search bar and only displays a pure logo image.
 
 ## [ ] Remove "Deepi version" link
 
