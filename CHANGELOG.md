@@ -1,5 +1,12 @@
 # 1.7.1 (unreleased)(2022-08-x)
 
+# 1.6.5 (2022-08-27)
+
+## Changed
+
+* 🔷 [function.php] new `script_vars` is added for later use.
+* 🔷 [deepi.php] unnecessary files are removed from inclusion.
+
 # 1.6.3 (2022-08-25)
 
 * 🎈 some guide & translations updated.
