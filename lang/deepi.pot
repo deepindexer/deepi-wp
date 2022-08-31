@@ -95,7 +95,7 @@ msgstr ""
 #: back/main.php:32
 msgid ""
 "If you do not have a Deepi account yet, you can create one for free at <a "
-"href=\"http://www.deepi.ir\">Deepi</a>.\n"
+"href=\"https://deepi.ir/en/landing/?ref=wp\">Deepi</a>.\n"
 "Once you have created your account, and you have signed in,"
 msgstr ""
 

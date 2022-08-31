@@ -37,7 +37,7 @@ function deepi_selectbox(){
     <div class='container' style="width:100%;">
         <form id="searchform" class="deepi_search_forms form needs-validation"  
             novalidate 
-            action="https://www.deepi.ir/fa/dashboard/search/"
+            action="https://www.deepi.ir/en/dashboard/search/"
             method="get" target="_blank">
                 <input type="hidden" id="project" name="project" value="<?php echo esc_html($slug); ?>">
 

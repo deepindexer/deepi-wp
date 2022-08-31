@@ -1,12 +1,12 @@
 <?php
 /*
 Plugin Name: Deepi
-Plugin URI: https://www.deepi.ir/
+Plugin URI: https://deepi.ir/en/landing/?ref=wp
 Description: Upgrade your site's "lexical search" to Deepi's "Conceptual Search", Take advantage of the latest "artificial intelligence" technologies.
 Plugin Header Comment 
 Text Domain: deepi
 Domain Path: /lang
-Version: 1.6.3
+Version: 1.6.9
 Requires at least: 5.6
 License: gpl-3.0
 Author: Mohsen Nasr 

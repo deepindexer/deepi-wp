@@ -1,12 +1,10 @@
 # Deepi WordPress Plugin
 
-Let [Deepi](https://www.deepi.ir) do your site's search.
+Let [Deepi](https://deepi.ir/en/landing/?ref=wp) do your site's search.
 
 Upgrade your site's "lexical search" to "Deepi's Conceptual Search"
 
 Take advantage of the latest "artificial intelligence" technologies
-
-**Note**: The "beta version" can only be used through "Iranian payment gateways".
 
 # Features
 
@@ -17,7 +15,7 @@ Take advantage of the latest "artificial intelligence" technologies
 - Intelligent Recognition of Text Entities
 - Precise & quick
 
-This plugin requires API keys from [Deepi](https://www.deepi.ir).
+This plugin requires API keys from [Deepi](https://deepi.ir/en/landing/?ref=wp).
 
 ## Links
 
@@ -32,7 +30,7 @@ A guide to setting up the WP Search with the Deepi plugin.
 When logged into the WordPress Dashboard, find the "Deepi" entry in the left-hand admin menu and click on it. You will
 be presented with the Settings page where you configure your Deepi credentials.
 
-If you do not have a Deepi account yet, you can create one for free at [Deepi](https://www.deepi.ir). Once you have
+If you do not have a Deepi account yet, you can create one for free at [Deepi](https://deepi.ir/en/landing/?ref=wp). Once you have
 created your account, and you have signed in,
 
 1. Go to the [setting page](https://www.deepi.ir/dashboard/setting/).

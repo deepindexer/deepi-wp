@@ -1,5 +1,17 @@
 # 1.7.1 (unreleased)(2022-08-x)
 
+# 1.6.9 (2022-08-31)
+
+## Added
+
+* 🎈 some translations updated.
+
+## Changed
+
+* 🔷 deepi.ir links updated and some links changed to `https://deepi.ir/en/landing/?ref=wp`
+* 🔷 [README.md][main.php] "IR payment gateways" limit removed.
+* 🔷 [searchbox.php] form action language changed to `/en`
+
 # 1.6.5 (2022-08-27)
 
 ## Changed
@@ -8,6 +20,8 @@
 * 🔷 [deepi.php] unnecessary files are removed from inclusion.
 
 # 1.6.3 (2022-08-25)
+
+## Added
 
 * 🎈 some guide & translations updated.
 

@@ -76,9 +76,9 @@ msgstr "دقت و سرعت"
 
 #: back/main.php:26
 msgid ""
-"This plugin requires API keys from <a href=\"http://www.deepi.ir\">Deepi</a>."
+"This plugin requires API keys from <a href=\"https://deepi.ir/en/landing/?ref=wp\">Deepi</a>."
 msgstr ""
-"این پلاگین نیازمند اخذ کلید‌ رابط برنامه‌نویسی از سایت <a href=\"https://www.deepi.ir\">دیپی</a> است."
+"این پلاگین نیازمند اخذ کلید‌ رابط برنامه‌نویسی از سایت <a href=\"https://deepi.ir/en/landing/?ref=wp\">دیپی</a> است."
 
 #: back/main.php:27
 msgid "Getting Started"
@@ -106,11 +106,11 @@ msgstr ""
 #: back/main.php:32
 msgid ""
 "If you do not have a Deepi account yet, you can create one for free at <a "
-"href=\"http://www.deepi.ir\">Deepi</a>.\n"
+"href=\"https://deepi.ir/en/landing/?ref=wp\">Deepi</a>.\n"
 "Once you have created your account, and you have signed in,"
 msgstr ""
 "اگر هنوز حساب کاربری خود را در دیپی ایجاد ننموده‌اید، می‌توانید هم‌اکنون یک حساب "
-"کاربری در <a href=\"http://www.deepi.ir\">دیپی</a> ایجاد فرمایید. پس از "
+"کاربری در <a href=\"https://deepi.ir/en/landing/?ref=wp\">دیپی</a> ایجاد فرمایید. پس از "
 "ایجاد حساب کاربری و ورود به سیستم،"
 
 #: back/main.php:35
@@ -429,3 +429,11 @@ msgstr "محسن نصر"
 # Searchbar placeholder
 msgid "Conceptual search in seventy languages ..."
 msgstr "جستجوی مفهومی به هفتاد زبان رایج دنیا ..."
+
+msgid "Your API key is invalid."
+msgstr ""
+"کلید رابط برنامه نویسی شما نامعتبر است."
+
+msgid "you don't have enough privileges to perform this operation."
+msgstr ""
+"شما مجوز کافی برای انجام این عملیات را ندارید."

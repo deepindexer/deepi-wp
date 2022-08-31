@@ -13,7 +13,6 @@ function deepi_main_html() {
 <p><?php _e("Let Deepi do your site's search",'deepi'); ?></p>
 <p><?php _e("Upgrade your site's \"lexical search\" to Deepi's \"Conceptual Search\"","deepi"); ?></p>
 <p><?php _e("Take advantage of the latest \"artificial intelligence\" technologies",'deepi'); ?></p>
-<p><?php _e("<strong>Note</strong>: The \"beta version\" can only be used through \"Iranian payment gateways\".",'deepi'); ?></p>
 <h1 id="features"><?php _e("Features",'deepi'); ?></h1>
 <ul>
 <li>* <?php _e("Conceptual search service",'deepi'); ?></li>
@@ -23,16 +22,16 @@ function deepi_main_html() {
 <li>* <?php _e("Intelligent Recognition of Text Entities",'deepi'); ?></li>
 <li>* <?php _e("Precise &amp; quick",'deepi'); ?></li>
 </ul>
-<p><?php _e('This plugin requires API keys from <a href="http://www.deepi.ir">Deepi</a>.','deepi'); ?></p>
+<p><?php _e('This plugin requires API keys from <a href="https://deepi.ir/en/landing/?ref=wp">Deepi</a>.','deepi'); ?></p>
 <h1 id="getting-started"><?php _e("Getting Started",'deepi'); ?></h1>
 <p><?php _e("A guide to setting up the WP Search with the Deepi plugin.",'deepi'); ?></p>
 <h2 id="deepi-credentials"><?php _e("Deepi Credentials",'deepi'); ?></h2>
 <p><?php _e("When logged into the WordPress Dashboard, find the &quot;Deepi&quot; entry in the left-hand admin menu and
 click on it. You will be presented with the Settings page where you configure your Deepi credentials.",'deepi'); ?></p>
-<p><?php _e('If you do not have a Deepi account yet, you can create one for free at <a href="http://www.deepi.ir">Deepi</a>.
+<p><?php _e('If you do not have a Deepi account yet, you can create one for free at <a href="https://deepi.ir/en/landing/?ref=wp">Deepi</a>.
 Once you have created your account, and you have signed in,','deepi'); ?></p>
 <ol>
-<li><?php _e('Go to the <a href="http://www.deepi.ir/dashboard/setting/">setting page</a>.','deepi'); ?></li>
+<li><?php _e('Go to the <a href="https://www.deepi.ir/dashboard/setting/">setting page</a>.','deepi'); ?></li>
 <li><?php _e("Create a new project for your first website (Figure 1).",'deepi'); ?></li>
 
 <p><img src="<?php echo deepi__PLUGIN_URL."resources/img/project.png";?>" alt="Deepi Setting Page &gt; Create New Project"></p>
