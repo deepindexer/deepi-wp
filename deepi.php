@@ -6,7 +6,7 @@ Description: Upgrade your site's "lexical search" to Deepi's "Conceptual Search"
 Plugin Header Comment 
 Text Domain: deepi
 Domain Path: /lang
-Version: 1.6.9
+Version: 1.10.17
 Requires at least: 5.6
 License: gpl-3.0
 Author: Mohsen Nasr 

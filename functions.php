@@ -37,7 +37,7 @@ function deepi_log($path){
 
 function deepi_is_key($input){
 	//$pattern = "~^[a-zA-Z0-9]+$~";
-	if(preg_match("/^[a-zA-Z0-9-\s]+$/" , $input ) == 0){
+	if(preg_match("/^[a-zA-Z0-9-_\s]+$/" , $input ) == 0){
 		return false;
 	}
 	else {

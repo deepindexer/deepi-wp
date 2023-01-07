@@ -1,4 +1,10 @@
-# 1.7.1 (unreleased)(2022-08-x)
+# 1.11.1 (unreleased)(2023-02-x)
+
+# 1.10.17 (2023-01-07)
+
+## Fixed
+
+* 🐛💡 [functions.php] deepi_is_key(): underline added to the slug pattern.
 
 # 1.6.9 (2022-08-31)
 

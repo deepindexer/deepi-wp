@@ -3,7 +3,7 @@ Contributors: deepindexer
 Tags: search, conceptual, AI
 Requires at least: 5.6
 Tested up to: 6.0.2
-Stable tag: 1.6.9
+Stable tag: 1.10.17
 Requires PHP: 7.4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -55,3 +55,6 @@ Follow along with the changelog on [Github](https://github.com/deepindexer/deepi
 
 = 1.6.9 =
 * Initial release.
+
+= 1.10.17 =
+* 🐛💡 [functions.php] deepi_is_key(): underline added to the slug pattern. (slug bug fixed.)
